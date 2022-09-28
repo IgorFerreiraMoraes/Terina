@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@700&display=swap");
+
+:root {
+    /*Colors*/
+    --base-bg-color: #fff5e4;
+    /*
+    FFE3E1
+    FFD1D1
+    FF9494
+    */
+
+    /*Typography*/
+    --title: 1.5rem "Reem Kufi Fun", sans-serif;
+    --paragraph: 2rem "Reem Kufi Fun", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--base-bg-color);
+    background: linear-gradient(127.13deg, #fff5e4 15.62%, #fffefc 98.66%);
+    width: 100%;
+    height: 100%;
+}
+#landing-page {
+    padding-top: 10vh;
+    height: 100vh;
+    background-image: url(images/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    font: var(--title);
+    color: #fff5e4;
+    text-align: right;
+    margin-bottom: 10vh;
+}
+nav{
+    padding: 5vh;
+    margin-top: -10vh;
+}
+nav a {
+    color: #b3a58d;
+    font-weight: 700;
+}
+nav a:hover {
+    color: #736A5B;
+}
+
+.navigation {
+    background: linear-gradient(170.01deg, #FFEFD3 6.88%, #FFFDF9 128.57%);
+    border-radius: 42px 42px 0px 0px;
+}
+
+#welcome-msg {
+    font: var(--paragraph);
+    text-align: right;
+    padding: 0;
+}
+
+h2{
+    font: var(--paragraph);
+    color: #736A5B;
+}
+.info{
+    text-align: justify;
+    text-indent: 1em;
+    color: #b3a58d;
+}
+.card.lugar  {
+    height: 35vh;
+    border: none;
+    box-shadow: inset 0px -112px 18px rgba(0, 0, 0, 0.3);
+    filter: drop-shadow(0px 16px 24px rgba(0, 0, 0, 0.4));
+    border-radius: 36px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff5e4;
+    justify-content: end;
+    padding-bottom: 3%;
+    font: var(--title);
+}
+.card.desc{
+    border: none;
+    border-radius: 0;
+    justify-content: start;
+    max-width: 80vw;
+    box-shadow: 8px 8px 0px #0000004f;
+}
+.card.desc p{
+    padding-top: 3vh;
+}
+@media only screen and (max-width: 991px) {
+    .card.desc{
+        margin-bottom: 5vh;
+    }
+    .navigation {
+        padding-top: 5vh;
+        border-radius: 0;
+    }
+    .card.lugar  {
+        height: 20vh;
+        max-width: 70vw;
+        margin-bottom: 3%;
+        box-shadow: inset 0px -60px 10px rgba(0, 0, 0, 0.3);
+        filter: drop-shadow(0px 16px 24px rgba(0, 0, 0, 0.4));
+    }
+    #welcome-msg {
+        text-align: center;
+    }
+    #landing-page {
+        padding-top: 3vh;
+        padding-bottom: 6vh;
+        height: 100%;
+    }
+    h1 {
+        margin-bottom: 3vh;
+    }
+}
+.vulcao {
+    background-image: url(images/Vulcão.png);
+}
+.monte {
+    background-image: url(images/Monte.png);
+}
+.lago {
+    background-image: url(images/Lago.png);
+}
+
+.bg-white {
+    background: linear-gradient(127.13deg, #fff5e4 15.62%, #fffefc 98.66%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-img {
+    background-image: url(images/landscape.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
